@@ -1,0 +1,6 @@
+;/*FB_PKG_DELIM*/
+
+__d("BaseChameleonThemeContext",["react"],(function(a,b,c,d,e,f,g){"use strict";var h;a=h||d("react");b={classNames:null};c=a.createContext(b);g["default"]=c}),98);
+__d("CometInteractionVC",["InteractionTracingMetrics"],(function(a,b,c,d,e,f,g){"use strict";function a(a,b){a=c("InteractionTracingMetrics").get(a);a=a&&a.vcTracker;a&&a.addMutationRoot(b)}g.addMutationRootForTraceId=a}),98);
+__d("getIncrementalEventCount",["performance"],(function(a,b,c,d,e,f,g){"use strict";var h,i=new Map();function j(a){var b;return(h||(h=c("performance")))==null?void 0:(b=(h||(h=c("performance"))).eventCounts)==null?void 0:b.get==null?void 0:b.get(a)}function a(a,b){var c=j(a);if(c==null)return null;b=b+"_"+a;a=i.get(b);i.set(b,c);if(a!=null)return c-a;else return c}g["default"]=a}),98);
+__d("stylex-inject",["CometStyleXSheet"],(function(a,b,c,d,e,f,g){function a(a,b,c){c===void 0&&(c=null),d("CometStyleXSheet").rootStyleSheet.insert(a,b,c)}g["default"]=a}),98);
