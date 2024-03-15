@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+            <h3 class="font-bold text-lg">Account Create Successful</h3>
+            <p class="py-4">Please login using your credentials</p>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn" onclick="window.location.href='login.html';">Login</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <script>
+        // Call showModal() when the window loads
+        window.addEventListener('load', function () {
+            const myModal = document.getElementById('my_modal_1');
+            if (myModal) {
+                myModal.showModal();
+            }
+        });
+    </script>
+</body>
+
+</html>
