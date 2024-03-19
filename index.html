@@ -23,7 +23,7 @@
                     <div>
                         <button class="btn">Home</button>
                         <button class="btn">Contact Us</button>
-                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button onclick="window.location.href='cart.php';"  class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
 
                     </div>
                     <div class="form-control">
@@ -32,7 +32,7 @@
                     <div class="dropdown dropdown-end">
                         <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                             <div class="w-10 rounded-full">
-                                <img onclick="window.location.href='login.html';" alt="Tailwind CSS Navbar component"
+                                <img alt="Tailwind CSS Navbar component"
                                     src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                             </div>
                         </div>
@@ -45,7 +45,9 @@
                                 </a>
                             </li>
                             <li><a>Settings</a></li>
-                            <li><a>Logout</a></li>
+                            <form action="logout.php" method="post">
+                                <li><button class="btn" type="submit">Logout</button></li>
+                            </form>
                         </ul>
                     </div>
                 </div>

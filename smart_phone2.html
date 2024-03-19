@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <h1>Shopping Cart</h1>
+    <form action="insert.php" method="POST">
+        <label for="product_name">Product Name:</label><br>
+        <input type="text" id="product_name" name="product_name"><br>
+        <label for="product_id">Product ID:</label><br>
+        <input type="number" id="product_id" name="product_id"><br>
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price" step="0.01"><br>
+        <input type="submit" value="Add to Cart">
+    </form>
+
+    <h2>Cart Items</h2>
+    <div id="cart_items">
+        <?php include 'display.php'; ?>
+    </div>
+</body>
+
+</html>

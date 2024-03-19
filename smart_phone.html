@@ -21,7 +21,8 @@
                     <div>
                         <button class="btn">Home</button>
                         <button class="btn">Contact Us</button>
-                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button onclick="window.location.href='cart.php';" class="btn"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
 
                     </div>
                     <div class="form-control">
@@ -93,7 +94,8 @@
                             ৳146,999</p>
                         <div class="card-actions">
                             <button class="btn btn-primary">Buy Now</button>
-                            <button id="iPhone-14-128GB" class="btn btn-primary" onclick="modal(id)">
+                            <button id="iPhone-14-128GB" class="btn btn-primary"
+                                onclick="addToCart('iPhone 14 128GB', 1, 146999)">
                                 Add to Cart
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -101,6 +103,7 @@
                                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                                 </svg>
                             </button>
+
                         </div>
                     </div>
                 </div>
@@ -115,7 +118,8 @@
                         </p>
                         <div class="card-actions">
                             <button class="btn btn-primary">Buy Now</button>
-                            <button id="iPhone-15-128GB" class="btn btn-primary" onclick="modal(id)">
+                            <button id="iPhone-15-128GB" class="btn btn-primary"
+                                onclick="addToCart(128, 'iPhone-15-128', 159999)">
                                 Add to Cart
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -270,7 +274,30 @@
             <a class="link link-hover">Cookie policy</a>
         </nav>
     </footer>
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+            <h3 class="font-bold text-lg">Account Create Successful</h3>
+            <p class="py-4">Please login using your credentials</p>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn" onclick="window.location.href='login.html';">Login</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- <script>
+        // Call showModal() when the window loads
+        window.addEventListener('load', function () {
+            const myModal = document.getElementById('my_modal_1');
+            if (myModal) {
+                myModal.showModal();
+            }
+        });
+    </script> -->
     <script src="addCartModal.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="addCartModal.js"></script> -->
 </body>
 
 </html>
