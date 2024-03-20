@@ -63,19 +63,24 @@
         }
 
         .responsive-table .col-2 {
-            flex-basis: 35%;
+            flex-basis: 30%;
         }
 
         .responsive-table .col-3 {
-            flex-basis: 20%;
+            flex-basis: 15%;
         }
 
         .responsive-table .col-4 {
-            flex-basis: 20%;
+            flex-basis: 15%;
         }
 
         .responsive-table .col-5 {
-            flex-basis: 15%;
+            flex-basis: 20%;
+        }
+
+        .responsive-table .col-6 {
+            flex-basis: 10%;
+            text-align: center;
         }
 
         @media all and (max-width: 767px) {
@@ -119,6 +124,7 @@
                 <div class="col col-3">Product ID</div>
                 <div class="col col-4">Price</div>
                 <div class="col col-5">Added Date & Time</div>
+                <div class="col col-6">Action</div>
             </li>
             <?php
             $servername = "localhost";
@@ -146,6 +152,7 @@
                     echo "<div class='col col-3'>" . $row["product_id"] . "</div>";
                     echo "<div class='col col-4'>$" . $row["price"] . "</div>";
                     echo "<div class='col col-5'>" . $row["date_added"] . "</div>";
+                    echo "<div class='col col-6'><button onclick='deleteItem(" . $row["id"] . ")'>Delete</button></div>";
                     echo "</li>";
                 }
             } else {
@@ -158,7 +165,16 @@
         <a href="index.html" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #333; font-size: 16px;">Back to Shopping</a>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        function deleteItem(id) {
+            if (confirm("Are you sure you want to delete this item?")) {
+                // You can implement AJAX here to send a request to delete the item from the database
+                // For simplicity, we'll just remove the item from the DOM
+                var item = document.getElementById("item-" + id);
+                item.parentNode.removeChild(item);
+            }
+        }
+    </script>
 </body>
 
 </html>
