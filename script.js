@@ -40,3 +40,24 @@ function addToCart(productName, productId, price) {
   xhr.send("productName=" + productName + "&productId=" + productId + "&price=" + price);
 }
 
+
+
+
+// get current tiem date 
+// function getCurrentDateTime() {
+//   const currentDate = new Date();
+  
+//   const year = currentDate.getFullYear();
+//   const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+//   const date = String(currentDate.getDate()).padStart(2, '0');
+//   const hours = String(currentDate.getHours()).padStart(2, '0');
+//   const minutes = String(currentDate.getMinutes()).padStart(2, '0');
+//   const seconds = String(currentDate.getSeconds()).padStart(2, '0');
+  
+//   const currentDateTime = `${year}-${month}-${date} ${hours}:${minutes}:${seconds}`;
+  
+//   return currentDateTime;
+// }
+
+// Example usage
+// console.log(getCurrentDateTime());

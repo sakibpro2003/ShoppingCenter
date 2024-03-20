@@ -17,11 +17,10 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "ID: " . $row["id"]. " - Product Name: " . $row["product_name"]. " - Product ID: " . $row["product_id"]. " - Price: $" . $row["price"]. "<br>";
+  while ($row = $result->fetch_assoc()) {
+    echo "ID: " . $row["id"] . " - Product Name: " . $row["product_name"] . " - Product ID: " . $row["product_id"] . " - Price: /=" . $row["price"] . "<br>";
   }
 } else {
   echo "0 results";
 }
 $conn->close();
-?>

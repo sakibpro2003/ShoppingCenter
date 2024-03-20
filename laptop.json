@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "MacBook Air (2022)",
+      "description": "The latest MacBook Air with M2 chip and Retina display.",
+      "price": 1099.99,
+      "image": "macbook_air_2022.jpg",
+      "processor": "Apple M2",
+      "ram": "8GB",
+      "storage": "256GB SSD"
+    },
+    {
+      "id": 2,
+      "name": "MacBook Pro 13-inch (2023)",
+      "description": "Powerful MacBook Pro with M3 chip and Touch Bar.",
+      "price": 1499.99,
+      "image": "macbook_pro_2023.jpg",
+      "processor": "Apple M3",
+      "ram": "16GB",
+      "storage": "512GB SSD"
+    },
+    {
+      "id": 3,
+      "name": "MacBook Pro 14-inch (2023)",
+      "description": "Sleek and powerful MacBook Pro with M3 chip and mini-LED display.",
+      "price": 1999.99,
+      "image": "macbook_pro_14_2023.jpg",
+      "processor": "Apple M3",
+      "ram": "16GB",
+      "storage": "1TB SSD"
+    },
+    {
+      "id": 4,
+      "name": "MacBook Pro 16-inch (2023)",
+      "description": "Large-screen MacBook Pro with M4 chip and ProMotion display.",
+      "price": 2399.99,
+      "image": "macbook_pro_16_2023.jpg",
+      "processor": "Apple M4",
+      "ram": "32GB",
+      "storage": "2TB SSD"
+    },
+    {
+      "id": 5,
+      "name": "MacBook Air (2021)",
+      "description": "Previous generation MacBook Air with M1 chip.",
+      "price": 999.99,
+      "image": "macbook_air_2021.jpg",
+      "processor": "Apple M1",
+      "ram": "8GB",
+      "storage": "256GB SSD"
+    },
+    {
+      "id": 6,
+      "name": "MacBook Pro 13-inch (2022)",
+      "description": "MacBook Pro with M2 chip and Touch Bar.",
+      "price": 1299.99,
+      "image": "macbook_pro_13_2022.jpg",
+      "processor": "Apple M2",
+      "ram": "16GB",
+      "storage": "512GB SSD"
+    }
+  ]
+  
