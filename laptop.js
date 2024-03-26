@@ -1,7 +1,5 @@
-// Define the container
 const container = document.getElementById("container");
 
-// Fetch data function
 function getData() {
   return fetch("./laptop.json")
     .then((res) => res.json())
@@ -9,7 +7,6 @@ function getData() {
 }
 getData();
 
-// Example usage
 getData()
   .then((names) => {
     names.forEach((name, index) => {

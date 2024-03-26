@@ -2,13 +2,11 @@
     stage: 0;
   }
   
-  /* config.css */
   
   :root {
     --baseColor: #606468;
   }
   
-  /* helpers/align.css */
   
   .align {
     display: grid;

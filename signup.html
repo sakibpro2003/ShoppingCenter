@@ -30,6 +30,7 @@
 
 
     <body class="align">
+        <h1 class="text-center text-6xl underline">Sign Up</h1>
 
         <div class="grid">
 
@@ -56,7 +57,7 @@
                     <label for="login__username"><svg class="icon">
                             <use xlink:href="#icon-user"></use>
                         </svg><span class="hidden">Email</span></label>
-                    <input class="form__input" placeholder="*****" type="password" id="password" name="password"
+                    <input class="form__input" placeholder="Password" type="password" id="password" name="password"
                         required>
                 </div>
 
@@ -65,20 +66,16 @@
                             <use xlink:href="#icon-lock"></use>
                         </svg><span class="hidden">Password</span></label>
                     <input type="password" class="form__input" class="grow" value="password" id="confirm_password"
-                        name="confirm_password" required>
+                        name="confirm_password" placeholder="Confirm Password" required>
                 </div>
 
                 <div class="form__field">
                     <input id="signUpBtn" type="submit" value="Sign Up">
-                    <!-- <button onclick="showModal()">modal</button> -->
 
                 </div>
 
             </form>
 
-            <p class="text--center">Not a member? <a href="#">Sign up now</a> <svg class="icon">
-                    <use xlink:href="#icon-arrow-right"></use>
-                </svg></p>
 
         </div>
 
@@ -100,15 +97,13 @@
     </body>
 
 
-    <!-- Open the modal using ID.showModal() method -->
-    <button class="btn bg-red-500" onclick="my_modal_1.showModal()">open modal</button>
+    <!-- <button class="btn bg-red-500" onclick="my_modal_1.showModal()">open modal</button> -->
     <dialog id="my_modal_1" class="modal">
         <div class="modal-box">
             <h3 class="font-bold text-lg">Hello!</h3>
             <p class="py-4">Press ESC key or click the button below to close</p>
             <div class="modal-action">
                 <form method="dialog">
-                    <!-- if there is a button in form, it will close the modal -->
                     <button class="btn">Close</button>
                 </form>
             </div>

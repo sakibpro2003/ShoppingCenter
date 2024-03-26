@@ -7,6 +7,9 @@
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             font-family: 'lato', sans-serif;
@@ -115,7 +118,7 @@
 
 <body>
     <div class="container">
-        <h2>Shopping Cart <small>(Responsive)</small></h2>
+        <h2 class="text-4xl">Shopping Cart</h2>
 
         <ul class="responsive-table">
             <li class="table-header">
@@ -132,7 +135,6 @@
             $password = "";
             $dbname = "shopping";
 
-            // Create connection
             $conn = new mysqli($servername, $username, $password, $dbname);
 
             // Check connection
@@ -144,7 +146,6 @@
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
-                // output data of each row
                 while ($row = $result->fetch_assoc()) {
                     echo "<li class='table-row'>";
                     echo "<div class='col col-1'>" . $row["id"] . "</div>";
@@ -161,20 +162,20 @@
             $conn->close();
             ?>
         </ul>
+        <div class="flex justify-center">
+            <button onclick="window.location.href='index.html'" class="btn btn-primary 
+            </div>
+">Home</button>
+        </div>
 
-        <a href="index.html" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #333; font-size: 16px;">Back to Shopping</a>
-    </div>
-
-    <script>
-        function deleteItem(id) {
-            if (confirm("Are you sure you want to delete this item?")) {
-                // You can implement AJAX here to send a request to delete the item from the database
-                // For simplicity, we'll just remove the item from the DOM
-                var item = document.getElementById("item-" + id);
-                item.parentNode.removeChild(item);
+        <script>
+            function deleteItem(id) {
+                if (confirm("Are you sure you want to delete this item?")) {
+                    var item = document.getElementById("item-" + id);
+                    item.parentNode.removeChild(item);
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 
 </html>

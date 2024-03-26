@@ -4,14 +4,11 @@ function addToCart(productId, productName, price) {
     productId.innerText = productId;
     my_modal_1.showModal()
   }
-  // console.log(productId);
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "insert.php", true);
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
-      // Redirect to cart page after adding to cart
-      // window.location.href = "cart.php";
       modal();
     }
   };
