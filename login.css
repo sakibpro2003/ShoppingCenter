@@ -50,7 +50,6 @@
     vertical-align: middle;
   }
   
-  /* layout/base.css */
   
   :root {
     --htmlFontSize: 100%;
@@ -84,7 +83,6 @@
     min-block-size: 100vh;
   }
   
-  /* modules/anchor.css */
   
   :root {
     --anchorColor: #eee;
